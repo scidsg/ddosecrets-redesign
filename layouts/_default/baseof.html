@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{ partial "meta.html" . }}
+  {{ partial "opengraph.html" . }}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  {{ partial "nav.html" . }}
+
+  <main id="content">
+  {{ block "main" . }}
+  {{ end }}
+  </main>
+</body>
+</html>

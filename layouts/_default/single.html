@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="single-page">
+  <article class="post-content">
+    <h2 class="page-title">{{ .Title }}</h2>
+    <p class="post-meta">
+      <time>{{ .Lastmod.Format "2006-01-02" }}</time>
+    </p>
+    {{ .Content }}
+  </article>
+  <aside class="related-posts">
+    <h2 class="section-title">Related Articles</h2>
+    <div class="card-container">
+    {{ range (where .Site.Pages "Section" "releases") }}
+      {{ range (where .Pages.ByLastmod.Reverse "Params.popular" true) }}
+        {{ .Render "summary-card" }}
+      {{ end }}
+    {{ end }}
+    </div>
+  </aside>
+</div>
+{{ end }}

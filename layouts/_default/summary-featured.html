@@ -1,0 +1,15 @@
+<article class="card card-featured">
+  <h3 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+  <span class="featured-tag">Breaking</span>
+  <!-- <ul>
+    {{ range .Params.categories }}
+      <li class="category">{{ . }}</li>
+    {{ end }}
+  </ul> -->
+  <p class="card-meta">
+    <time>{{ .Lastmod.Format "2006-01-02" }}</time>
+  </p>
+  <p class="card-teaser">
+    {{ .Summary | safeHTML | truncate 500 }}
+  </p>
+</article>

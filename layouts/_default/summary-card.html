@@ -1,0 +1,9 @@
+<article class="card">
+  <h3 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+  <p class="card-meta">
+    <time>{{ .Lastmod.Format "2006-01-02" }}</time>
+  </p>
+  <p class="card-teaser">
+    {{ .Summary | truncate 190 }}
+  </p>
+</article>
