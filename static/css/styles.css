@@ -102,6 +102,11 @@ h1, h2, h3, h4 {
   align-items: center;
   border-bottom: 1px solid var(--color-gray);
   margin-bottom: 1.5rem;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255,255,255,.85);
+  backdrop-filter: blur(.75rem);
+
 }
 
 .page-header nav a {
@@ -200,7 +205,7 @@ p.last-updated {
 .recent-content .card-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--spacing-l);
+  gap: var(--spacing-m);
 }
 .popular-content .card-container{
   display: flex;
