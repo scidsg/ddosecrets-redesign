@@ -276,3 +276,17 @@ p.last-updated {
   text-transform: uppercase;
   margin-bottom: calc(0.75 * var(--spacing));
 }
+
+@media only screen and (max-width: 768px) {
+  .homepage-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .homepage-content .card {
+    grid-column: span 2;
+  }
+
+  .popular-content {
+    grid-column: span 2;
+  }
+}
