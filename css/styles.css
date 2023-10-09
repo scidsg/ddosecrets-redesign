@@ -5,17 +5,22 @@
 }
 
 :root {
-  --color-black: #000000;
+  --color-black: #222;
   --color-black-light: #333333;
-  --color-gray: #D9D9D9;
+  --color-gray: #f2f2f2;
+  --color-metadata: #595959;
+  --color-border: rgba(0,0,0,0.08);
   --color-light-gray: #f4f4f4;
   --color-white: #FFFFFF;
   --font-heading: 'Merriweather', serif;
   --font-text: 'Helvetica', sans-serif;
   font-size: 18px;
   --spacing: 1.78rem;
+  --spacing-s: 1rem;
+  --spacing-m: 1.25rem;
   --spacing-l: calc(1.5 * var(--spacing));
   --spacing-xl: calc(1.75 * var(--spacing));
+  --shadow-card: 0px 20px 1.5rem -10px rgba(0,0,0,0.08);
 }
 
 body {
@@ -74,7 +79,7 @@ a {
 
 h1, h2, h3, h4 {
   font-family: var(--font-heading);
-  font-weight: 700;
+  font-weight: 100;
   color: var(--color-black-light)
 }
 
@@ -104,11 +109,12 @@ h1, h2, h3, h4 {
 
 .page-header h1 {
   font-size: 1.1rem;
+  font-weight: 400;
 }
 
 .page-header nav ul {
   display: flex;
-  gap: calc(0.5 * var(--spacing));
+  gap: calc(0.875 * var(--spacing));
   align-items: center;
 }
 
@@ -117,17 +123,19 @@ h1, h2, h3, h4 {
 }
 
 .btn-primary {
-  padding: 12px 17px;
+  padding: 12px 17px 11px 17px;
   background-color: var(--color-black);
   color: var(--color-white);
-  border-radius: 8px;
-  font-size: 0.7rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
   font-weight: 700;
 }
 
 p.last-updated {
-  font-size: 0.7rem;
+  font-size: 0.625rem;
   margin: 0 var(--spacing);
+  font-family: monospace;
+  color: var(--color-metadata);
 }
 
 .homepage-content {
@@ -159,7 +167,7 @@ p.last-updated {
 }
 .popular-content .card-container{
   display: flex;
-  gap: var(--spacing-l);
+  gap: var(--spacing-m);
   flex-direction: column;
 }
 .card {
@@ -168,7 +176,7 @@ p.last-updated {
   flex-direction: column;
 }
 .homepage-content .card {
-  padding-bottom: var(--spacing-l);
+  padding-bottom: var(--spacing-m);
   border-bottom: 1px solid var(--color-gray);
 }
 .card-featured {
@@ -178,9 +186,10 @@ p.last-updated {
 .card-featured .featured-tag {
   order: -1;
   background-color: var(--color-gray);
+  border: 1px solid var(--color-border);
   align-self: flex-start;
-  padding: 4px 14px;
-  font-size: 0.8rem;
+  padding: 6px 12px 3px 12px;
+  font-size: 0.675rem;
   text-transform: uppercase;
   border-radius: 50px;
   margin-bottom: 0.75rem;
@@ -199,20 +208,31 @@ p.last-updated {
   font-size: 2.67rem;
 }
 .card .card-meta {
-  font-size: 0.9rem;
-  margin: 0.4rem 0;
+  font-size: 0.675rem;
+  margin: 0.5rem 0 .75rem 0;
   font-family: monospace;
+  color: var(--color-metadata);
+}
+.card .card-teaser {
+  font-size: .875rem;
+  line-height: 1.6;
 }
 
 .donation-banner {
-  border-radius: 12px;
+  border-radius: 4px;
   background: var(--color-light-gray);
-  padding: var(--spacing);
+  padding: calc(var(--spacing-s) * 1.125) var(--spacing-m) var(--spacing-m) var(--spacing-m);
   margin-bottom: var(--spacing-l);
-  border: 1px solid var(--color-gray);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
 }
 .banner-text {
-  margin: calc(0.75 * var(--spacing)) 0;
+  margin: calc(0.35 * var(--spacing)) 0 calc(0.5 * var(--spacing)) 0;
+  font-size: .825rem;
+  line-height: 1.6;
+}
+.donation-banner h2 {
+  font-size: 1.25rem;
 }
 
 /* Single page specific CSS */
