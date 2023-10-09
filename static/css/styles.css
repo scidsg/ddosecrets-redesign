@@ -21,7 +21,7 @@
   --spacing-m: 1.25rem;
   --spacing-l: calc(1.5 * var(--spacing));
   --spacing-xl: calc(1.75 * var(--spacing));
-  --shadow: 0px 20px 1.5rem -10px rgba(0,0,0,0.08);
+  --shadow: 0px 12px 1rem -10px rgba(0,0,0,0.08);
   --shadow-btn: 0px 6px 1rem -4px rgba(0,0,0,0.08);
 }
 
