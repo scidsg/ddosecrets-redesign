@@ -16,11 +16,13 @@
   --font-text: 'Helvetica', sans-serif;
   font-size: 18px;
   --spacing: 1.78rem;
+  --spacing-xs: .75rem;
   --spacing-s: 1rem;
   --spacing-m: 1.25rem;
   --spacing-l: calc(1.5 * var(--spacing));
   --spacing-xl: calc(1.75 * var(--spacing));
-  --shadow-card: 0px 20px 1.5rem -10px rgba(0,0,0,0.08);
+  --shadow: 0px 20px 1.5rem -10px rgba(0,0,0,0.08);
+  --shadow-btn: 0px 6px 1rem -4px rgba(0,0,0,0.08);
 }
 
 body {
@@ -131,6 +133,16 @@ h1, h2, h3, h4 {
   font-weight: 700;
 }
 
+.btn-secondary {
+  padding: 8px 12px 7px 12px;
+  background-color: white;
+  color: var(--color-metadata);
+  border-radius: 4px;
+  font-size: 0.725rem;
+  font-weight: 700;
+  border: 1px solid var(--color-border);
+}
+
 p.last-updated {
   font-size: 0.625rem;
   margin: 0 var(--spacing);
@@ -217,6 +229,11 @@ p.last-updated {
   font-size: .875rem;
   line-height: 1.6;
 }
+.card .btn-secondary {
+  width: fit-content;
+  margin-top: var(--spacing-xs);
+  box-shadow: var(--shadow-btn);
+}
 
 .donation-banner {
   border-radius: 4px;
@@ -224,7 +241,7 @@ p.last-updated {
   padding: calc(var(--spacing-s) * 1.125) var(--spacing-m) var(--spacing-m) var(--spacing-m);
   margin-bottom: var(--spacing-l);
   border: 1px solid var(--color-border);
-  box-shadow: var(--shadow-card);
+  box-shadow: var(--shadow);
 }
 .banner-text {
   margin: calc(0.35 * var(--spacing)) 0 calc(0.5 * var(--spacing)) 0;
