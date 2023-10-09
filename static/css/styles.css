@@ -144,23 +144,30 @@ h1, h2, h3, h4 {
   height: 72px;
 }
 
-.btn-primary {
-  padding: 12px 17px 11px 17px;
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+}
+
+.btn-primary,
+.page-header .btn-secondary {
+  padding: 12px 17px 11px 17px !important;
   background-color: var(--color-black);
   color: var(--color-white);
   border-radius: 4px;
-  font-size: 0.75rem;
+  font-size: 0.75rem !important;
   font-weight: 700;
 }
 
 .btn-secondary {
   padding: 8px 12px 7px 12px;
-  background-color: white;
-  color: var(--color-metadata);
+  background-color: white !important;
+  color: var(--color-metadata) !important;
   border-radius: 4px;
   font-size: 0.725rem;
   font-weight: 700;
-  border: 1px solid var(--color-border);
+  outline: 1px solid var(--color-border);
 }
 
 .btn-mobile img {
