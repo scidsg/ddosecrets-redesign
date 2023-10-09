@@ -201,9 +201,9 @@ p.last-updated {
 .card .card-title a:hover {
   text-decoration: underline;
 }
-.popular-content .card:first-of-type .card-title {
+/*.popular-content .card:first-of-type .card-title {
   font-size: 2rem;
-}
+}*/
 .card-featured .card-title {
   font-size: 2.67rem;
 }
