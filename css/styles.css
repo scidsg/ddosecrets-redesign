@@ -217,7 +217,7 @@ h1, h2, h3, h4 {
 
 p.last-updated {
   font-size: 0.625rem;
-  margin: 0 var(--spacing);
+  margin: 0;
   font-family: monospace;
   color: var(--color-metadata);
   color: white;
@@ -226,8 +226,8 @@ p.last-updated {
 .homepage-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--spacing-m);
-  margin: var(--spacing);
+  gap: var(--spacing-s);
+  margin: var(--spacing) 0;
 }
 .homepage-content .section-title {
   margin-bottom: var(--spacing);
