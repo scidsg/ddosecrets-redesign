@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://scidsg.github.io/ddosecrets-redesign/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'DDoSecrets Wiki'
 
 [frontmatter]
   lastmod = ['lastmod', ':git', ':fileModTime', ':default']
