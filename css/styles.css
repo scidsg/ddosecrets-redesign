@@ -114,13 +114,7 @@ h1, h2, h3, h4 {
   justify-content: space-between;
   padding: calc(.6 * var(--spacing)) var(--spacing);
   align-items: center;
-/*  border-bottom: 1px solid var(--color-gray);*/
   margin-bottom: 1.5rem;
-/*  position: sticky;
-  top: 0;*/
-/*  background-color: rgba(255,255,255,.85);*/
-/*  backdrop-filter: blur(.75rem);*/
-
 }
 
 .page-header nav a:not(.btn-primary,.btn-secondary) {
@@ -132,13 +126,13 @@ h1, h2, h3, h4 {
 }
 
 .page-header h1 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 400;
-  color: white !important;
+  color: white;
 }
 
 .page-header h1 a {
-  color: white !important;
+  color: white;
 }
 
 .page-header nav ul {
@@ -194,17 +188,17 @@ h1, h2, h3, h4 {
 }
 
 .page-header .btn-secondary {
-  background-color: rgba(0,0,0,0) !important;
+  background-color: rgba(0,0,0,0);
   outline: 2px solid white;
-  color: white !important;
-  padding: 10px 14px 9px 14px !important;
+  color: white;
+  padding: 10px 14px 9px 14px;
 }
 
 .page-header .btn-primary {
-  background-color: rgba(255,255,255,1) !important;
+  background-color: rgba(255,255,255,1);
   outline: 2px solid white;
-  color: var(--color-black) !important;
-  padding: 10px 14px 9px 14px !important;
+  color: var(--color-black);
+  padding: 10px 14px 9px 14px;
 }
 
 .btn-mobile img {
@@ -324,7 +318,7 @@ p.last-updated {
   backdrop-filter: blur(3rem);
   padding: calc(var(--spacing-s) * 1.5) var(--spacing-m) calc(var(--spacing-s) * 1.5) var(--spacing-m);
   margin-bottom: var(--spacing-l);
-  border: .5px solid var(--color-black);
+  border: 1px solid var(--color-border);
   box-shadow: var(--shadow);
 }
 .banner-text {
