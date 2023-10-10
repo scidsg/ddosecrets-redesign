@@ -222,7 +222,7 @@ p.last-updated {
 .homepage-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--spacing-s);
+  gap: var(--spacing-xs);
   margin: var(--spacing) 0;
 }
 .homepage-content .section-title {
