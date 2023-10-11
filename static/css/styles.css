@@ -116,7 +116,10 @@ h1, h2, h3, h4 {
   align-items: center;
   margin-bottom: 1.5rem;
 }
-
+.page-header > nav {
+  display: flex;
+  flex-direction: row;
+}
 .page-header nav a:not(.btn-primary,.btn-secondary) {
   font-size: 0.7rem;
   color: white;
@@ -145,7 +148,6 @@ h1, h2, h3, h4 {
   list-style: none;
   align-items: center;
 }
-
 .page-header .group {
   display: flex;
   flex-direction: row;
@@ -205,11 +207,13 @@ h1, h2, h3, h4 {
   width: 24px;
   height: 24px;
 }
-
-.btn-mobile {
+.page-header nav .btn-mobile {
+  display: none;
+}
+/*.btn-mobile {
   align-items: center;
   display: flex;
-}
+}*/
 
 p.last-updated {
   font-size: 0.625rem;
@@ -368,6 +372,22 @@ p.last-updated {
   font-size: 0.9rem;
   text-transform: uppercase;
   margin-bottom: calc(0.75 * var(--spacing));
+}
+
+@media only screen and (max-width: 960px) {
+  .page-header nav ul {
+    display: none;
+  }
+
+  .page-header nav .btn-mobile {
+    display: inherit;
+  }
+
+  .page-header h1 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: white;
+  }
 }
 
 @media only screen and (max-width: 768px) {
