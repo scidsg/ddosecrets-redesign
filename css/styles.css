@@ -248,6 +248,10 @@ p.last-updated {
   font-size: .8125rem;
   line-height: 1.6;
 }
+.popular-content .section-title {
+  margin-bottom: var(--spacing-xs);
+}
+
 .recent-content {
   grid-column: span 2;
   background-color: rgba(255,255,255,1);
