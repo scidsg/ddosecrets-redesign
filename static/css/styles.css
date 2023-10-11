@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: .3s;
 }
 
 :root {
@@ -114,7 +115,7 @@ h1, h2, h3, h4 {
   justify-content: space-between;
   padding: calc(.6 * var(--spacing)) var(--spacing);
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 .page-header > nav {
   display: flex;
@@ -152,9 +153,8 @@ h1, h2, h3, h4 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 1rem;
+  gap: .5rem;
 }
-
 .logo {
   width: 72px;
   height: 72px;
@@ -202,13 +202,15 @@ h1, h2, h3, h4 {
   color: var(--color-black);
   padding: 10px 14px 9px 14px;
 }
-
 .btn-mobile img {
   width: 24px;
   height: 24px;
+  filter:invert(1);
 }
 .page-header nav .btn-mobile {
   display: none;
+  background-color: transparent;
+  border: none;
 }
 /*.btn-mobile {
   align-items: center;
@@ -241,6 +243,10 @@ p.last-updated {
   background-color: rgba(255,255,255,1);
   padding: 2rem;
   border-radius: .325rem;
+}
+.popular-content .card .card-teaser {
+  font-size: .8125rem;
+  line-height: 1.6;
 }
 .recent-content {
   grid-column: span 2;
@@ -374,6 +380,19 @@ p.last-updated {
   margin-bottom: calc(0.75 * var(--spacing));
 }
 
+@media only screen and (max-width: 1280px) {
+  .page-header, 
+  #content {
+    padding-left: var(--spacing-m);
+    padding-right: var(--spacing-m);
+  }
+
+  .recent-content,
+  .popular-content {
+    padding: calc(var(--spacing-m) * 1.25);
+  }
+}
+
 @media only screen and (max-width: 960px) {
   .page-header nav ul {
     display: none;
@@ -385,8 +404,10 @@ p.last-updated {
 
   .page-header h1 {
     font-size: 1.125rem;
-    font-weight: 400;
-    color: white;
+  }
+
+  .card-featured .card-title {
+    font-size: 2.25rem;
   }
 }
 
@@ -401,5 +422,41 @@ p.last-updated {
 
   .popular-content {
     grid-column: span 2;
+  }
+
+  .page-header, 
+  #content {
+    padding-left: var(--spacing-s);
+    padding-right: var(--spacing-s);
+  }
+
+  .recent-content,
+  .popular-content {
+    padding: calc(var(--spacing-m) * 1.125);
+  }
+
+  .page-header h1 {
+    font-size: 1rem;
+  }
+}
+
+
+@media only screen and (max-width: 640px) {
+  #content {
+    padding-left: calc(var(--spacing-xs) * .75);
+    padding-right: calc(var(--spacing-xs) * .75);
+  }
+
+  .recent-content,
+  .popular-content {
+    padding: calc(var(--spacing-m) * 1);
+  }
+
+  .card-featured .card-title {
+    font-size: 2rem;
+  }
+
+  p.last-updated {
+    padding: 0 var(--spacing-xs);
   }
 }
