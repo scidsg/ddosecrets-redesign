@@ -31,6 +31,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   font-family: var(--font-text);
+  overflow-x: hidden;
 }
 
 a {
