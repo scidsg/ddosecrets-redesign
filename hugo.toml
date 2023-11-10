@@ -4,3 +4,9 @@ title = 'DDoSecrets Wiki'
 
 [frontmatter]
   lastmod = ['lastmod', ':git', ':fileModTime', ':default']
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 10

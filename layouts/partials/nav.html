@@ -9,13 +9,17 @@
   <nav>
     <button class="btn-mobile" aria-label="Expand mobile navigation" aria-expanded="false"><img src="images/menu.png"></button>
     <ul>
-      <li><a href="">About Us</a></li>
-      <li><a href="">Tools of the Trade</a></li>
-      <li><a href="">Submit Documents</a></li>
-      <div class="btn-group">
-        <li><a href="https://ddosecrets.charity" class="btn-primary" target="_blank" rel="noopener noreferrer">Donate Now</a></li>
-      </div>
-      <!-- <li><a href="" class="btn-mobile"><img src="images/menu.png"></a></li> -->
+      {{ range .Site.Menus.main }}
+        <li>
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        <li><a href="">Tools of the Trade</a></li>
+        <li><a href="">Submit Documents</a></li>
+        <div class="btn-group">
+          <li><a href="https://ddosecrets.charity" class="btn-primary" target="_blank" rel="noopener noreferrer">Donate Now</a></li>
+        </div>
+      {{ end }}
     </ul>
+
   </nav>
 </header>
