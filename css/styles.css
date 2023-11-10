@@ -123,7 +123,7 @@ h1, h2, h3, h4 {
   flex-direction: row;
 }
 .page-header nav a:not(.btn-primary,.btn-secondary) {
-  font-size: 0.7rem;
+  font-size: 0.825rem;
   color: white;
 }
 .page-header a:hover {
@@ -142,7 +142,7 @@ h1, h2, h3, h4 {
 
 .page-header nav ul {
   display: flex;
-  gap: calc(0.875 * var(--spacing));
+  gap: calc(var(--spacing-l) * .9);
   align-items: center;
 }
 
@@ -194,14 +194,15 @@ h1, h2, h3, h4 {
   background-color: rgba(0,0,0,0);
   outline: 2px solid white;
   color: white;
-  padding: 10px 14px 9px 14px;
+  padding: 10px 14px 10px 14px;
 }
 
 .page-header .btn-primary {
   background-color: rgba(255,255,255,1);
 /*  outline: 2px solid white;*/
   color: var(--color-black);
-  padding: 10px 14px 9px 14px;
+  padding: 10px 14px 10px 14px;
+  font-size: .875rem;
 }
 .btn-mobile img {
   width: 24px;
@@ -340,7 +341,9 @@ p.last-updated {
   font-family: 'Merriweather';
 }
 .donation-banner h2 {
-  font-size: 1.5rem;
+  font-size: 1.625rem;
+  font-family: var(--font-text);
+  font-weight: 700;
   margin-bottom: var(--spacing-s);
 }
 
