@@ -14,7 +14,7 @@
   --color-light-gray: #f4f4f4;
   --color-white: #FFFFFF;
   --font-heading: 'Merriweather', serif;
-  --font-text: 'Helvetica', sans-serif;
+  --font-text: 'Atkinson Hyperlegible', sans-serif;
   font-size: 18px;
   --spacing: 1.78rem;
   --spacing-xs: .75rem;
@@ -104,7 +104,7 @@ h1, h2, h3, h4 {
 }
 
 .page-header, #content {
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -181,13 +181,13 @@ h1, h2, h3, h4 {
 }
 
 .btn-secondary {
-  padding: 8px 12px 7px 12px;
+  padding: 8px 12px 8px 12px;
   background-color: white;
-  color: var(--color-black);
+  color: #494949;
   border-radius: 4px;
-  font-size: 0.725rem;
+  font-size: 0.825rem;
   font-weight: 700;
-  border: 1px solid var(--color-black);
+  border: 1px solid #494949;
 }
 
 .page-header .btn-secondary {
@@ -199,7 +199,7 @@ h1, h2, h3, h4 {
 
 .page-header .btn-primary {
   background-color: rgba(255,255,255,1);
-  outline: 2px solid white;
+/*  outline: 2px solid white;*/
   color: var(--color-black);
   padding: 10px 14px 9px 14px;
 }
@@ -234,16 +234,17 @@ p.last-updated {
 }
 .homepage-content .section-title {
   margin-bottom: var(--spacing);
-  padding-bottom: 8px;
+  padding-bottom: 1rem;
   border-bottom: 1px solid var(--color-border);
-  text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  font-family: var(--font-text);
+  font-weight: 700;
 }
 
 .popular-content {
   background-color: rgba(255,255,255,1);
   padding: 2rem;
-  border-radius: .325rem;
+  border-radius: 4px;
 }
 .popular-content .card .card-teaser {
   font-size: .8125rem;
@@ -257,7 +258,7 @@ p.last-updated {
   grid-column: span 2;
   background-color: rgba(255,255,255,1);
   padding: 2rem;
-  border-radius: .325rem;
+  border-radius: 4px;
 }
 .recent-content .card-container {
   display: grid;
@@ -280,18 +281,21 @@ p.last-updated {
 }
 .card-featured {
   grid-column: span 2;
-  width: 100%
+  width: 100%;
+  border-bottom: ;
 }
 .card-featured .featured-tag {
   order: -1;
   background-color: var(--color-gray);
   border: 1px solid var(--color-border);
   align-self: flex-start;
-  padding: 6px 12px 4px 12px;
-  font-size: 0.675rem;
+  padding: 6px 12px 6px 12px;
+  font-size: .675rem;
+  font-weight: 700;
   text-transform: uppercase;
   border-radius: 50px;
   margin-bottom: 0.75rem;
+  color: rgba(0,0,0,0.7);
 }
 .card .card-title {
   font-size: 1.33rem;
@@ -320,13 +324,14 @@ p.last-updated {
 }
 
 .donation-banner {
-  border-radius: 8px;
+  border-radius: 4px;
   background: rgba(245,245,245,.7);
   backdrop-filter: blur(3rem);
   padding: calc(var(--spacing-s) * 1.5) var(--spacing-m) calc(var(--spacing-s) * 1.5) var(--spacing-m);
-  margin-bottom: var(--spacing-l);
+  margin: var(--spacing-s) 0;
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow);
+  grid-column: span 2;
 }
 .donation-banner p {
   margin: 0 0 calc(0.5 * var(--spacing)) 0;
@@ -347,7 +352,7 @@ p.last-updated {
   grid-template-columns: repeat(3, 1fr);
   background-color: white;
   padding: 2rem;
-  border-radius: .25rem;
+  border-radius: 4px;
 }
 
 .single-page > .post-content {
@@ -387,7 +392,7 @@ p.last-updated {
   margin-bottom: calc(0.75 * var(--spacing));
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1440px) {
   .page-header, 
   #content {
     padding-left: var(--spacing-m);
@@ -418,7 +423,7 @@ p.last-updated {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .homepage-content {
     grid-template-columns: repeat(2, 1fr);
   }
