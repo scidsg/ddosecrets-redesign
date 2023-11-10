@@ -296,7 +296,8 @@ p.last-updated {
   text-transform: uppercase;
   border-radius: 50px;
   margin-bottom: 0.75rem;
-  color: rgba(0,0,0,0.7);
+  color: #494949;
+  letter-spacing: .025rem;
 }
 .card .card-title {
   font-size: 1.33rem;
