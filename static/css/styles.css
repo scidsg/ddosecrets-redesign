@@ -230,7 +230,7 @@ p.last-updated {
 .homepage-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--spacing-xs);
+  gap: calc(var(--spacing-xs) * .5);
   margin: var(--spacing) 0;
 }
 .homepage-content .section-title {
