@@ -317,7 +317,7 @@ p.last-updated {
 }
 .card .card-meta {
   font-size: 0.675rem;
-  margin: 0.5rem 0 .75rem 0;
+  margin: 0.325rem 0 .5rem 0;
   font-family: monospace;
   color: var(--color-metadata);
 }
