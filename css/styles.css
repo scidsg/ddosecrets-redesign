@@ -531,7 +531,7 @@ h2.page-title {
 
 .post-info .info-list {
   display: flex;
-  gap: var(--spacing);
+  gap: var(--spacing-l);
   margin-top: var(--spacing-xxs);
 }
 .post-info .btn-list {
