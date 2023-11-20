@@ -506,7 +506,7 @@ h2.page-title {
   letter-spacing: .05rem;
 }
 .post-info .post-info-title {
-  font-size: .925rem;
+  font-size: 1rem;
   font-family: var(--font-mono);
   font-weight: 700;
   margin: 0;
