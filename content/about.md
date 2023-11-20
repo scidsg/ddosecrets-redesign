@@ -101,7 +101,7 @@ Maggie Mayhem is an activist focused on sex worker rights, harm reduction, and r
 
 #### Glenn Sorrentino (he/him) - [@gs@fosstodon.org](https://fosstodon.org/@gs)
 
-Glenn Sorrentino is the founder and Executive Director of Science & Design, a non-profit focused on free and open-source software for internet freedom, activism, and LGBTQ+ rights. A refugee from Big Tech, Glenn's decade as a product designer led to US patents, but he's more proud of his work in the public domain 😘. His commitment to positive change extends to volunteering for open-source projects like Signal, OnionShare, and CalyxOS. As an advisor to Distributed Denial of Secrets, he furthers his push for transparency and an equitable digital landscape
+Glenn Sorrentino is the founder and Executive Director of [Science & Design, Inc.](https://scidsg.org), a 501(c)(3) non-profit focused on building free and open-source software furthering free speech and free access to information online. A refugee from Big Tech, Glenn's decade as a product designer led to major product launches, US patents, and shaping emerging design patterns, but he's more proud of his open source work 😘. His commitment to positive change extends to volunteering for open-source projects like Signal, OnionShare, and CalyxOS. As an advisor to Distributed Denial of Secrets, he furthers his push for transparency and an equitable digital landscape.
 
 
 ### Friends of the Collective
