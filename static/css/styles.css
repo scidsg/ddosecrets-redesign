@@ -213,7 +213,7 @@ a.btn-mobile {
 .page-header .btn-primary {
   background-color: rgba(255,255,255,1);
 /*  outline: 2px solid white;*/
-  color: var(--color-black);
+  color: #494949;
   padding: 10px 14px 10px 14px;
   font-size: .875rem;
 }
