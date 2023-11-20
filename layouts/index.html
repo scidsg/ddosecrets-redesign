@@ -2,7 +2,7 @@
   <p class="last-updated">Last updated: {{ .Lastmod.Format "02 Jan 2006, 15:04 UTC" }}</p>
   <div class="homepage-content">
     <div class="recent-content">
-      
+
       <h2 class="section-title">New & Updated</h2>
       <div class="card-container">
       {{ range (where .Site.Pages "Section" "releases") }}
@@ -10,7 +10,7 @@
           {{ if .Params.featured }}
           {{ .Render "summary-featured" }}
           <div class="donation-banner">
-            <h2 class="banner-title">👋 Welcome to DDoSecrets</h2>
+            <h3 class="banner-title">👋 Welcome to DDoSecrets</h2>
             <p>Distributed Denial of Secrets is a journalist 501(c)(3) non-profit devoted to publishing and archiving leaks, and to the free transmission of data in the public interest.</p>
             <p>We aim to act as a beacon of information and to avoid political, corporate or personal leanings. As a transparency collective, we don't support any cause, idea or message beyond ensuring that information is available to those who need it most—the people.</p>
 

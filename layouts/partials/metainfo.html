@@ -1,0 +1,72 @@
+<details class="post-info" open>
+  <summary><h3 class="post-info-title">Release Info</h3></summary>
+  {{ with .dataset }}
+  <div class="info-container">
+    <h4 class="info-title">Dataset Details</h4>
+    <dl class="info-list">
+      {{ with .country }}
+      <div class="info-item">
+        <dt>Country</dt>
+        <dd>{{ . }}</dd>
+      </div>
+      {{ end }}
+
+      {{ with .type }}
+      <div class="info-item">
+        <dt>Type</dt>
+        <dd>{{ . }}</dd>
+      </div>
+      {{ end }}
+
+      {{ with .source }}
+      <div class="info-item">
+        <dt>Source</dt>
+        <dd>{{ . }}</dd>
+      </div>
+      {{ end }}
+
+      {{ with .size }}
+      <div class="info-item">
+        <dt>File size</dt>
+        <dd>{{ . }}</dd>
+      </div>
+      {{ end }}
+    </dl>
+  </div>
+  {{ end }}
+
+  {{ with .download }}
+  <div class="info-container">
+    <h4 class="info-title">Downloads (<a href="https://ddosecrets.com/wiki/Torrents">How to download</a>)</h4>
+    <div class="info-list">
+      {{ with .magnet }}
+      <a href="{{ . }}" class="btn-secondary">Magnet</a>
+      {{ end }}
+
+      {{ with .torrent }}
+      <a href="{{ . }}" class="btn-secondary">Torrent</a>
+      {{ end }}
+
+      {{ with .direct }}
+      <a href="{{ . }}" class="btn-secondary">Direct</a>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+
+  {{ with .references }}
+    <div class="info-container">
+      <h4 class="info-title">References</h4>
+      {{ range . }}
+      <a href="{{ .link }}">{{ .name }}</a>
+      {{ end }}
+    </div>
+  {{ end }}
+
+  {{ with .notes }}
+  <div class="info-container">
+    <h4 class="info-title">Editor's notes</h4>
+    <p>{{ . }}</p>
+  </div>
+  {{ end }}
+</details>

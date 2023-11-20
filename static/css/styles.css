@@ -363,7 +363,7 @@ p.last-updated {
   line-height: 1.8;
   font-family: 'Merriweather';
 }
-.donation-banner h2 {
+.donation-banner .banner-title {
   font-size: 1.75rem;
   font-family: var(--font-text);
   font-weight: 700;
@@ -439,6 +439,14 @@ p.last-updated {
   margin: 0.8rem 0;
 }
 
+.post-content ul {
+  padding-left: var(--spacing)
+}
+
+.post-content h3 {
+  font-size: 2rem;
+}
+
 .single-article-page > .related-posts {
   border-left: 1px solid var(--color-border);
   padding-left: var(--spacing);
@@ -453,6 +461,52 @@ p.last-updated {
   font-family: var(--font-text);
   font-weight: 700;
   margin-bottom: calc(0.75 * var(--spacing));
+}
+
+.post-info{
+  border-radius: 4px;
+  background: rgba(245,245,245,.7);
+  backdrop-filter: blur(3rem);
+  padding: calc(var(--spacing-s) * 1.5) var(--spacing-m) calc(var(--spacing-s) * 1.5) var(--spacing-m);
+  margin: var(--spacing-s) 0;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow);
+  grid-column: span 2;
+}
+.post-info > summary::marker {
+  font-size: 1.85rem;
+}
+.post-info p {
+  margin: 0 0 calc(0.5 * var(--spacing)) 0;
+  font-size: .875rem;
+  line-height: 1.8;
+  font-family: 'Merriweather';
+}
+.post-info .post-info-title {
+  font-size: 1.75rem;
+  font-family: var(--font-text);
+  font-weight: 700;
+  margin: 0;
+  display: inline-block;
+}
+
+.post-info .info-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: var(--spacing);
+}
+
+.post-info .info-list {
+  display: flex;
+  gap: var(--spacing)
+}
+
+.post-info .info-list .info-item dt {
+  font-weight: bold;
+}
+
+.post-info .info-list .info-item dd {
+  text-transform: capitalize;
 }
 
 @media only screen and (max-width: 1440px) {

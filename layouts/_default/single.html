@@ -5,6 +5,9 @@
     <p class="post-meta">
       <time>{{ .Lastmod.Format "2006-01-02" }}</time>
     </p>
+    {{ with .Param "info" }}
+      {{ partial "metainfo.html" . }}
+    {{ end }}
     {{ .Content }}
   </article>
   <aside class="related-posts">
