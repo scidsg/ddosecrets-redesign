@@ -37,8 +37,8 @@
 
   {{ with .download }}
   <div class="info-container">
-    <h4 class="info-title">Downloads (<a href="https://ddosecrets.com/wiki/Torrents">How to download</a>)</h4>
-    <div class="info-list">
+    <h4 class="info-title">Downloads <span class="dlLink">(<a href="https://ddosecrets.com/wiki/Torrents">How to download</a>)</span></h4>
+    <div class="info-list btn-list">
       {{ with .magnet }}
       <a href="{{ . }}" class="btn-secondary">Magnet</a>
       {{ end }}
