@@ -400,13 +400,14 @@ p.last-updated {
 }
 
 .single-page h3 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: var(--spacing);
+  font-weight: 700;
 }
 
 .single-page h4 {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 /* Single page specific CSS */
