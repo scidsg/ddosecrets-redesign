@@ -15,6 +15,7 @@
   --color-white: #FFFFFF;
   --font-heading: 'Merriweather', serif;
   --font-text: 'Atkinson Hyperlegible', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
   font-size: 18px;
   --spacing: 1.78rem;
   --spacing-xxs: .5rem;
@@ -235,7 +236,7 @@ a.btn-mobile {
 p.last-updated {
   font-size: 0.625rem;
   margin: 0;
-  font-family: monospace;
+  font-family: var(--font-mono);
   color: var(--color-metadata);
   color: white;
 }
@@ -335,7 +336,7 @@ p.last-updated {
 .card .card-meta {
   font-size: 0.675rem;
   margin: 0.325rem 0 .5rem 0;
-  font-family: monospace;
+  font-family: var(--font-mono);
   color: var(--color-metadata);
 }
 .card .card-teaser {
@@ -431,7 +432,7 @@ p.last-updated {
 .post-content .post-meta {
   font-size: 0.75rem;
   margin: 0.45rem 0 0.75rem;
-  font-family: monospace;
+  font-family: var(--font-mono);
   color: var(--color-metadata);
 }
 
@@ -483,7 +484,7 @@ h2.page-title {
   border: 1px solid rgba(0,0,0,0.25);
   padding: var(--spacing-s);
   margin-bottom: var(--spacing);
-  font-family: monospace;
+  font-family: var(--font-mono);
   font-size: .725rem;
   background-color: #ffffff;
   background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ccc' fill-opacity='0.5' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
@@ -506,7 +507,7 @@ h2.page-title {
 }
 .post-info .post-info-title {
   font-size: .925rem;
-  font-family: monospace;
+  font-family: var(--font-mono);
   font-weight: 700;
   margin: 0;
   display: inline-block;
@@ -517,7 +518,7 @@ h2.page-title {
 .post-info .info-title {
   font-size: .825rem;
   font-weight: 800;
-  font-family: monospace;
+  font-family: var(--font-mono);
   margin-top: var(--spacing-m);
   margin-bottom: var(--spacing-xxs);
 }
