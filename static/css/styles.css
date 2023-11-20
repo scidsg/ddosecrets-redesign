@@ -163,6 +163,12 @@ h1, h2, h3, h4 {
   height: 72px;
 }
 
+a.btn-primary,
+a.btn-secondary,
+a.btn-mobile {
+  text-decoration: none;
+}
+
 .btn-group {
   display: flex;
   flex-direction: row;
@@ -289,7 +295,6 @@ p.last-updated {
 .card-featured {
   grid-column: span 2;
   width: 100%;
-  border-bottom: ;
 }
 .card-featured .featured-tag {
   order: -1;
@@ -309,6 +314,9 @@ p.last-updated {
   font-size: 1.33rem;
   line-height: 1.25;
   margin-bottom: .25rem;
+}
+.card .card-title a {
+  text-decoration: none;
 }
 .card .card-title a:hover {
   text-decoration: underline;

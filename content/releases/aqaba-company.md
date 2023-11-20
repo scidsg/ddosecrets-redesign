@@ -3,7 +3,7 @@ title: Aqaba Company for Ports Operation & Management, Jordan
 lastmod: 2023-08-20
 categories:
     - hack
-    - limited-distribution
+    - something-different
     - ransomware
 ---
 

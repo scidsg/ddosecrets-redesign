@@ -10,10 +10,8 @@
   <aside class="related-posts">
     <h2 class="section-title">Related Articles</h2>
     <div class="card-container">
-    {{ range (where .Site.Pages "Section" "releases") }}
-      {{ range (where .Pages.ByLastmod.Reverse "Params.popular" true) }}
-        {{ .Render "summary-card" }}
-      {{ end }}
+    {{ range .Site.Pages.RelatedIndices . "categories" | first 3 }}
+      {{ .Render "summary-card" }}
     {{ end }}
     </div>
   </aside>

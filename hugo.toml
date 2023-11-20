@@ -10,3 +10,14 @@ identifier = "about"
 name = "About"
 url = "/about/"
 weight = 10
+
+
+
+[related]
+  includeNewer = true
+  threshold = 20
+  toLower = false
+
+[[related.indices]]
+  name = 'categories'
+  weight = 80

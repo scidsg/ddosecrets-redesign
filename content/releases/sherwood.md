@@ -4,7 +4,7 @@ lastmod: 2023-08-09
 popular: true
 categories:
     - hack
-    - limited-distribution
+    - something-different
     - ransomware
 teaser_image: /images/placeholder.png
 ---
