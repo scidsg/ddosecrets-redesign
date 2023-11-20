@@ -104,7 +104,7 @@ h1, h2, h3, h4 {
 
 .page-title {
   font-size: 3rem;
-  line-height: 1.25;
+  line-height: 1.2;
 }
 
 .page-header, #content {
@@ -307,8 +307,8 @@ p.last-updated {
   background-color: var(--color-gray);
   border: 1px solid var(--color-border);
   align-self: flex-start;
-  padding: 6px 12px 6px 12px;
-  font-size: .675rem;
+  padding: 6px 13px 5px 10px;
+  font-size: .6125rem;
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 50px;
@@ -443,7 +443,10 @@ p.last-updated {
 .post-content h2,
 .post-content h3,
 .post-content h4 {
-  margin: 0.75rem 0 0.25rem 0;
+  margin: .5rem 0 0.25rem 0;
+}
+h2.page-title {
+  margin: 1rem 0 .5rem 0;
 }
 
 .post-content ul {
@@ -472,7 +475,7 @@ p.last-updated {
   margin-bottom: calc(0.75 * var(--spacing));
 }
 
-.post-info{
+.post-info {
   margin: var(--spacing-s) 0 var(--spacing-m) 0 ;
   grid-column: span 2;
   border-radius: 4px;
@@ -501,7 +504,7 @@ p.last-updated {
   letter-spacing: .05rem;
 }
 .post-info .post-info-title {
-  font-size: 1rem;
+  font-size: .925rem;
   font-family: monospace;
   font-weight: 700;
   margin: 0;
@@ -613,7 +616,10 @@ p.last-updated {
   .single-article-page > .post-content {
     padding-right: 0;
   }
-}
+
+  .page-title {
+    font-size: 2.5rem;
+  }
 
 
 @media only screen and (max-width: 640px) {
@@ -633,6 +639,10 @@ p.last-updated {
 
   p.last-updated {
     padding: 0 var(--spacing-xs);
+  }
+
+  .page-title {
+    font-size: 2.25rem;
   }
 
   .single-article-page {
