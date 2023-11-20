@@ -285,7 +285,7 @@ p.last-updated {
 }
 .card-container{
   display: flex;
-  gap: var(--spacing-xs);
+  gap: var(--spacing-m);
   flex-direction: column;
 }
 .card {
