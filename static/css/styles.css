@@ -37,7 +37,6 @@ body {
 a {
   display: inline-block;
   color: var(--color-black-light);
-  text-decoration: none;
 }
 
 :focus:not(:focus-visible) {
@@ -125,6 +124,9 @@ h1, h2, h3, h4 {
 .page-header nav a:not(.btn-primary,.btn-secondary) {
   font-size: 0.825rem;
   color: white;
+}
+.page-header a {
+  text-decoration: none;
 }
 .page-header a:hover {
   text-decoration: underline;
@@ -329,7 +331,7 @@ p.last-updated {
   width: fit-content;
   margin-top: var(--spacing-xs);
 }
-.card h2, 
+.card h2,
 .card h3,
 .card h4,
 .card h5,
@@ -360,8 +362,42 @@ p.last-updated {
   margin-bottom: var(--spacing-s);
 }
 
-/* Single page specific CSS */
 .single-page {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+.single-page p {
+  margin: 0.8rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.single-page ul {
+  padding-left: var(--spacing)
+}
+
+.single-page h2,
+.single-page h3,
+.single-page h4 {
+  margin: 1.25rem 0 0.8rem;
+}
+
+.single-page h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.single-page h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* Single page specific CSS */
+.single-article-page {
   max-width: 100%;
   margin: 0 auto;
   display: grid;
@@ -371,7 +407,7 @@ p.last-updated {
   border-radius: 4px;
 }
 
-.single-page > .post-content {
+.single-article-page > .post-content {
   grid-column: span 2;
   padding-right: var(--spacing);
 }
@@ -389,15 +425,17 @@ p.last-updated {
   line-height: 1.6rem;
 }
 
-.post-content h2, h3, h4 {
+.post-content h2,
+.post-content h3,
+.post-content h4 {
   margin: 0.8rem 0;
 }
 
-.single-page > .related-posts {
+.single-article-page > .related-posts {
   border-left: 1px solid var(--color-border);
   padding-left: var(--spacing);
 }
-.single-page > .related-posts > .card-container {
+.single-article-page > .related-posts > .card-container {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xs);
@@ -410,7 +448,7 @@ p.last-updated {
 }
 
 @media only screen and (max-width: 1440px) {
-  .page-header, 
+  .page-header,
   #content {
     padding-left: var(--spacing-m);
     padding-right: var(--spacing-m);
@@ -453,7 +491,7 @@ p.last-updated {
     grid-column: span 2;
   }
 
-  .page-header, 
+  .page-header,
   #content {
     padding-left: var(--spacing-s);
     padding-right: var(--spacing-s);
