@@ -567,6 +567,15 @@ p.last-updated {
   .page-header h1 {
     font-size: 1rem;
   }
+
+  .single-article-page {
+    display: block;
+  }
+
+  .single-article-page .related-posts {
+    border: 0;
+    padding: 0;
+  }
 }
 
 
