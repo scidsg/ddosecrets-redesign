@@ -267,7 +267,7 @@ p.last-updated {
   line-height: 1.6;
 }
 .popular-content .section-title {
-  margin-bottom: var(--spacing-xs);
+  margin-bottom: var(--spacing-m);
 }
 
 .popular-content .btn-secondary {
