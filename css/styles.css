@@ -441,7 +441,7 @@ p.last-updated {
 .post-content h2,
 .post-content h3,
 .post-content h4 {
-  margin: 0.8rem 0;
+  margin: 0.75rem 0 0.25rem 0;
 }
 
 .post-content ul {
