@@ -608,6 +608,10 @@ p.last-updated {
     border: 0;
     padding: 0;
   }
+
+  .single-article-page > .post-content {
+    padding-right: 0;
+  }
 }
 
 
@@ -628,5 +632,9 @@ p.last-updated {
 
   p.last-updated {
     padding: 0 var(--spacing-xs);
+  }
+
+  .single-article-page {
+    padding: 1.5rem;
   }
 }
