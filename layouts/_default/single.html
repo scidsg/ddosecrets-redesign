@@ -13,7 +13,7 @@
   <aside class="related-posts">
     <h2 class="section-title">Related Articles</h2>
     <div class="card-container">
-    {{ range .Site.Pages.RelatedIndices . "categories" | first 3 }}
+    {{ range .Site.Pages.RelatedIndices . "categories" | first 5 }}
       {{ .Render "summary-card" }}
     {{ end }}
     </div>
