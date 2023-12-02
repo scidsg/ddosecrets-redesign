@@ -9,8 +9,6 @@ categories:
 
 
 
-# CityComp
-
 From Distributed Denial of Secrets
 
 ---
