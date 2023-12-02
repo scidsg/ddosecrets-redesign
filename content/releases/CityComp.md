@@ -13,16 +13,16 @@ categories:
 
 From Distributed Denial of Secrets
 
------------------------------------------------------------------------------------------------ -------------
+---
 RELEASE
 
 **CityComp**
 A Dutch IT company breached by Team Snatch / Boris the Blade.
 DATASET DETAILS
-**COUNTRY**                                              Germany
-**TYPE**                                                 Hack
-**SOURCE**                                             Team Snatch
-**FILE SIZE**                                             39.4 GB
+**COUNTRY** Germany
+**TYPE** Hack
+**SOURCE** Team Snatch
+**FILE SIZE** 39.4 GB
 DOWNLOADS
 **MAGNET**
 **TORRENT**
@@ -32,7 +32,7 @@ MORE
 
 **EDITOR NOTES**
 A full copy of the data was not able to be retrieved before the Team Snatch server went down.
------------------------------------------------------------------------------------------------ -------------
+---
 
 A Dutch IT company breached by Team Snatch / Boris the Blade. A full
 copy of the data was not able to be retrieved before the Team Snatch
@@ -43,6 +43,6 @@ Retrieved from
 
 [Categories](./Special:Categories.html "Special:Categories"):
 
--   [Germany](./Category:Germany.html "Category:Germany")
--   [Hack](./Category:Hack.html "Category:Hack")
--   [Ransomware](./Category:Ransomware.html "Category:Ransomware")
+- [Germany](./Category:Germany.html "Category:Germany")
+- [Hack](./Category:Hack.html "Category:Hack")
+- [Ransomware](./Category:Ransomware.html "Category:Ransomware")
