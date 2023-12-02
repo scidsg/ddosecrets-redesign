@@ -1,3 +1,16 @@
+---
+title: Bmk
+lastmod: '2023-12-02'
+categories:
+- Saudi Arabia
+- Ransomware
+- Corporate
+- Hack
+- 'Limited
+
+  Distribution'
+---
+
 
 
 # BMK
