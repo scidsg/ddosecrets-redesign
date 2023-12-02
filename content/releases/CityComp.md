@@ -5,6 +5,34 @@ categories:
 - Germany
 - Hack
 - Ransomware
+info:
+  dataset:
+    country: ''
+    type: ''
+    source: ''
+    size: ''
+  download:
+    magnet: ''
+    torrent: ''
+    direct: ''
+  references:
+  - !!python/tuple
+    - https://ddosecrets.com/index.php?title=CityComp&oldid=1158
+    - ../index.php%3Ftitle=CityComp&oldid=1158.html
+  - !!python/tuple
+    - Categories
+    - ./Special:Categories.html "Special:Categories"
+  - !!python/tuple
+    - Germany
+    - ./Category:Germany.html "Category:Germany"
+  - !!python/tuple
+    - Hack
+    - ./Category:Hack.html "Category:Hack"
+  - !!python/tuple
+    - Ransomware
+    - ./Category:Ransomware.html "Category:Ransomware"
+  notes: A full copy of the data was not able to be retrieved before the Team Snatch
+    server went down.
 ---
 
 
